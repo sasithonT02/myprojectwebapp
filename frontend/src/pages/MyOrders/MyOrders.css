@@ -1,0 +1,86 @@
+.my-orders {
+  padding: 20px;
+}
+
+.my-orders h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* จัดตำแหน่งให้ปุ่มอยู่ขวา */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ✅ ปรับให้ปุ่มอยู่ชิดกัน */
+.order-actions {
+  display: flex;
+  gap: 10px; /* กำหนดระยะห่างระหว่างปุ่ม */
+}
+
+.order-button,
+.cancel-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ปรับสีปุ่ม "ดูรายละเอียด" */
+.order-button {
+  background-color: #ff9800;
+  color: white;
+}
+
+.order-button:hover {
+  background-color: #e68900;
+}
+
+/* ปรับสีปุ่ม "ยกเลิกคำสั่งซื้อ" */
+.cancel-button {
+  background-color: #e53935;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #c62828;
+}
+
+
+
+
+.order-details {
+  margin-top: 10px;
+  padding: 10px;
+  background: #e8f5e9;
+  border-radius: 5px;
+}
+
+.order-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item ul li {
+  font-size: 14px;
+  margin: 5px 0;
+  background-color: #e9f7e9;
+  padding: 8px;
+  border-radius: 4px;
+}

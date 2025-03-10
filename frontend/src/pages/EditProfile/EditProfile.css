@@ -1,0 +1,86 @@
+/* สไตล์สำหรับคอมโพเนนต์ EditProfile */
+.editProfile {
+  max-width: 500px; /* ความกว้างสูงสุด 500px */
+  margin: 50px auto; /* ระยะห่างด้านบน 50px และจัดกึ่งกลางแนวนอน */
+  padding: 20px; /* ระยะห่างภายใน 20px */
+  background: #fff; /* พื้นหลังสีขาว */
+  border-radius: 10px; /* มุมโค้งมน 10px */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
+  text-align: center; /* จัดกึ่งกลางข้อความ */
+}
+
+/* สไตล์สำหรับหัวข้อใน EditProfile */
+h2 {
+  color: #333; /* สีฟอนต์เทาเข้ม */
+  margin-bottom: 20px; /* ระยะห่างด้านล่าง 20px */
+}
+
+/* สไตล์สำหรับข้อความในโปรไฟล์ */
+.profileView p {
+  font-size: 18px; /* ขนาดฟอนต์ 18px */
+  margin: 10px 0; /* ระยะห่างด้านบนและด้านล่าง 10px */
+  color: #444; /* สีฟอนต์เทาเข้ม */
+}
+
+/* สไตล์สำหรับปุ่มแก้ไขโปรไฟล์และปุ่มยกเลิก */
+.editProfileBtn, .cancelBtn {
+  background: #007bff; /* พื้นหลังสีน้ำเงิน */
+  color: white; /* สีฟอนต์ขาว */
+  padding: 10px 15px; /* ระยะห่างภายใน 10px ด้านบนและล่าง, 15px ด้านซ้ายและขวา */
+  border: none; /* ไม่มีเส้นขอบ */
+  border-radius: 5px; /* มุมโค้งมน 5px */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+  font-size: 16px; /* ขนาดฟอนต์ 16px */
+  margin-top: 15px; /* ระยะห่างด้านบน 15px */
+  transition: 0.3s; /* การเปลี่ยนแปลงที่ราบรื่นใน 0.3 วินาที */
+}
+
+/* สไตล์สำหรับปุ่มแก้ไขโปรไฟล์เมื่อชี้ */
+.editProfileBtn:hover {
+  background: #0056b3; /* พื้นหลังสีน้ำเงินเข้มเมื่อชี้ */
+}
+
+/* สไตล์สำหรับปุ่มยกเลิก */
+.cancelBtn {
+  background: #dc3545; /* พื้นหลังสีแดง */
+}
+
+/* สไตล์สำหรับปุ่มยกเลิกเมื่อชี้ */
+.cancelBtn:hover {
+  background: #a71d2a; /* พื้นหลังสีแดงเข้มเมื่อชี้ */
+}
+
+/* สไตล์สำหรับฟอร์มแก้ไขโปรไฟล์ */
+.editProfileForm {
+  display: flex; /* ใช้ Flexbox */
+  flex-direction: column; /* จัดเรียงในแนวตั้ง */
+  gap: 15px; /* ระยะห่างระหว่างลูก 15px */
+}
+
+/* สไตล์สำหรับฟิลด์ในฟอร์มแก้ไขโปรไฟล์ */
+.editProfileField {
+  display: flex; /* ใช้ Flexbox */
+  flex-direction: column; /* จัดเรียงในแนวตั้ง */
+  text-align: left; /* จัดข้อความไปทางซ้าย */
+}
+
+/* สไตล์สำหรับป้ายกำกับ */
+label {
+  font-weight: bold; /* ความหนาของฟอนต์ */
+  margin-bottom: 5px; /* ระยะห่างด้านล่าง 5px */
+}
+
+/* สไตล์สำหรับอินพุตและเท็กซ์เอเรีย */
+input, textarea {
+  padding: 10px; /* ระยะห่างภายใน 10px */
+  border: 1px solid #ccc; /* เส้นขอบสีเทา */
+  border-radius: 5px; /* มุมโค้งมน 5px */
+  font-size: 16px; /* ขนาดฟอนต์ 16px */
+  width: 100%; /* ความกว้างเต็ม */
+}
+
+/* สไตล์สำหรับเท็กซ์เอเรีย */
+textarea {
+  resize: none; /* ไม่สามารถปรับขนาดได้ */
+  height: 80px; /* ความสูง 80px */
+}

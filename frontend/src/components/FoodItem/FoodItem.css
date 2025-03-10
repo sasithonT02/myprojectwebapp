@@ -1,0 +1,127 @@
+.food-item {
+    width: 100%; /* ปรับขนาดเพื่อให้เต็มหน้าจอ */
+    margin: auto; /* จัดตำแหน่งตรงกลาง */ 
+    border-radius: 15px; /* ปรับมุมขอบให้โค้ง */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* ลดความเข้มของเงา */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff; /* เพิ่มพื้นหลังขาว */
+    display: flex; /* ให้เรียงตามแนวนอน */
+    flex-direction: column; /* ให้เรียงตามแนวตั้ง */
+    justify-content: space-between; /* ให้เรียงตามแนวตั้ง */
+    height: 420px; /* ความสูงรวมที่สมดุล */
+    overflow: hidden; /* ป้องกันการเกินขอบ */
+    padding-bottom: 10px; /* เพิ่มพื้นที่ล่างเล็กน้อย */
+}
+
+.food-item:hover {
+    transform: translateY(-5px); /* เพิ่ม animation hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเมื่อ hover */
+}
+
+.food-item-image {
+    width: 100%; /* ปรับขนาดภาพให้เต็ม container */
+    height: 200px; /* ปรับขนาดภาพให้สมดุล */
+    border-radius: 15px 15px 0px 0px; /* ปรับมุมขอบให้โค้งเฉพาะด้านบน */
+    object-fit: cover; /* ให้ภาพครอบคลุมเต็มพื้นที่ */
+}
+
+.food-item-info {
+    padding: 10px 15px; /* เพิ่มระยะห่างขอบ */
+    font-size: 18px; /* ปรับขนาดตัวอักษรใหญ่ขึ้น */
+    font-weight: bold; /* ให้ตัวอักษรหนาขึ้น */
+    text-align: center; /* จัดตำแหน่งตรงกลาง */
+    color: #333; /* สีตัวอักษรเข้มขึ้น */
+}
+
+.food-item-desc {
+    color: #676767; /* ใช้สีเทา */
+    font-size: 14px; /* ปรับขนาดตัวอักษรเล็กลง */
+    padding: 0px 15px; /* เพิ่มระยะห่างขอบ */
+    text-align: center; /* จัดตำแหน่งตรงกลาง */
+    word-wrap: break-word; /* ให้ข้อความตัดคำเมื่อยาวเกิน */
+    margin: 5px 0; /* ปรับระยะห่างขอบ */
+}
+
+
+.food-item-price {
+    color: red; /* ใช้สีแดงแบบดูนุ่มนวล */
+    font-size: 20px; /* ปรับขนาดตัวอักษรใหญ่ขึ้น */
+    font-weight: bold; /* ให้ตัวอักษรหนาขึ้น */
+    text-align: center; /* จัดตำแหน่งตรงกลาง */
+    margin: 10px 0px; /* ปรับระยะห่างขอบ */
+}
+
+.food-item-img-container {
+    position: relative; /* ให้ container มีตำแหน่งสำคัญ */
+    height: 200px; /* ให้ container มีความสูงเท่ากับภาพ */
+}
+
+.food-item-img-container .add {
+    position: absolute; /* ให้ปุ่มเพิ่มสินค้าอยู่ในตำแหน่งที่ต้องการ */
+    width: 40px; /* ปรับขนาดปุ่ม */
+    bottom: 15px; /* ให้ปุ่มอยู่ด้านล่าง */
+    right: 15px; /* ให้ปุ่มอยู่ด้านขวา */
+    cursor: pointer; /* ให้เมาส์เป็นรูปขีด */
+    border-radius: 50%; /* ให้มีรูปร่างเป็นวงกลม */
+    background: #fff; /* เพิ่มพื้นหลังขาว */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: transform 0.2s ease; /* เพิ่ม animation ให้เมื่อ hover */
+}
+
+.food-item-img-container .add:hover {
+    transform: scale(1.1); /* ขยายปุ่มเมื่อ hover */
+}
+
+/* ✅ Counter (+ -) */
+.food-item-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: auto; /* ✅ ทำให้ขนาดพอดีกับเนื้อหา */
+    max-width: 120px; /* ✅ ปรับขนาดสูงสุดที่ต้องการ */
+    margin: auto; /* ✅ ทำให้ counter อยู่ตรงกลาง */
+    padding: 8px 12px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.food-item-counter img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.food-item-counter img:hover {
+    transform: scale(1.1);
+}
+
+/* ✅ ปุ่มหยิบใส่ตะกร้า */
+.add-to-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: auto;
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #27ae60;
+}

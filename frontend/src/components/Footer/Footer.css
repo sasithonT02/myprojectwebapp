@@ -1,0 +1,64 @@
+.footer {
+  color: #d9d9d9; /* สีของตัวอักษร */
+  background-color: #323232; /* สีพื้นหลัง */
+  display: flex; /* แสดงผลเป็น Flexbox */
+  flex-direction: column; /* แสดงผลเป็นคอลัมน์ */
+  align-items: center; /* จัดตำแหน่งตามแนวแกนตั้ง */
+  gap: 20px; /* ระยะห่างระหว่างข้อความ */
+  padding: 20px 8vw; /* ระยะห่างขอบ */
+  padding-top: 80px; /* ระยะห่างด้านบน */
+  margin-top: 100px; /* ระยะห่างด้านบน */
+}
+
+.footer-content {
+  width: 100%; /* ความกว้าง 100% */
+  display: grid; /* แสดงผลเป็น Grid */
+  grid-template-columns: 2fr 1fr 1fr; /* แบ่งเป็น 3 ส่วน ส่วนแรก 2 ส่วน ส่วนที่สองและสาม 1 ส่วน */
+  gap: 80px; /* ระยะห่างระหว่างข้อความ */
+}
+
+.footer-content-center,
+.footer-social-icons .footer-content-right {
+  display: flex; /* แสดงผลเป็น Flexbox */
+  flex-direction: column; /* แสดงผลเป็นคอลัมน์ */
+  align-items: start; /* จัดตำแหน่งตามแนวแกนตั้ง */
+  gap: 20px; /* ระยะห่างระหว่างข้อความ */
+}
+
+.footer-content-center li,
+.footer-content-right li {
+  list-style: none; /* ไม่แสดง Bullet */
+  margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+  cursor: pointer; /* ปรับเป็น Cursor Pointer */
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  color: white; /* สีของตัวอักษร */
+}
+
+.footer-social-icons img {
+  width: 40px; /* ความกว้าง 40px */
+  margin-right: 15px; /* ระยะห่างด้านขวา */
+}
+
+.footer hr {
+  width: 100%; /* ความกว้าง 100% */
+  height: 2px; /* ความสูง 2px */
+  margin: 20px 0px; /* ระยะห่างด้านบนและด้านล่าง */
+  background-color: gray; /* สีพื้นหลัง */
+  border: none; /* ไม่มีเส้นขอบ */
+}
+
+/* @media (max-width:750px) หมายถึง ถ้าหน้าจอขนาดเล็กกว่าหรือเท่ากับ 750px */
+@media (max-width:750px) {
+  .footer-content {
+    display: flex; /* แสดงผลเป็น Flexbox */
+    flex-direction: column; /* แสดงผลเป็นคอลัมน์ */
+    gap: 35px; /* ระยะห่างระหว่างข้อความ */
+  }
+
+  .footer-copyright {
+    text-align: center; /* จัดตำแหน่งตามแนวนอน */
+  }
+}

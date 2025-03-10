@@ -1,0 +1,81 @@
+.list-menu {
+    width: 100%; /* ปรับให้ฟอร์มกว้างขึ้น */
+    max-width: 1000px; /* เพิ่มขนาดสูงสุด */
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.list-menu h2 {
+    /*font-size: 1.2rem;*/
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-align: center;
+    color: black;
+}
+
+.list-table-format {
+    display: grid;
+    grid-template-columns: 80px 2fr 1fr 0.8fr 0.8fr 0.8fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border-bottom: 1px solid #cacaca;
+    font-size: 14px;
+    text-align: center;
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+}
+
+.list-table-format img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.edit-button, .delete-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 80px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.edit-button {
+    background-color: #007bff;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.list-menu b {
+    font-size: 18px;
+}
+
+.list-menu p {
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .list-table-format {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+}

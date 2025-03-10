@@ -1,0 +1,157 @@
+/* สไตล์สำหรับคอมโพเนนต์ Cart */
+.cart {
+    margin-top: 100px;
+    /* ระยะห่างด้านบน 100px */
+}
+
+/* สไตล์สำหรับหัวข้อของรายการใน Cart */
+.cart-items-title {
+    display: grid;
+    /* ใช้ Grid Layout */
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+    /* กำหนดจำนวนคอลัมน์ */
+    align-items: center;
+    /* จัดกึ่งกลางแนวตั้ง */
+    color: gray;
+    /* สีฟอนต์เทา */
+    font-size: max(1vw, 12px);
+    /* ขนาดฟอนต์ที่ปรับตามขนาดหน้าจอ โดยมีค่าขั้นต่ำที่ 12px */
+}
+
+/* สไตล์สำหรับรายการใน Cart */
+.cart-items-item {
+    margin: 10px 0px;
+    /* ระยะห่างด้านบนและด้านล่าง 10px */
+    color: black;
+    /* สีฟอนต์ดำ */
+}
+
+/* สไตล์สำหรับรูปภาพในรายการ Cart */
+.cart-items-item img {
+    width: 50px;
+    /* ความกว้าง 50px */
+}
+
+/* สไตล์สำหรับเส้นแบ่งใน Cart */
+.cart hr {
+    height: 1px;
+    /* ความสูง 1px */
+    background-color: #e2e2e2;
+    /* พื้นหลังสีเทาอ่อน */
+    border: none;
+    /* ไม่มีเส้นขอบ */
+}
+
+/* สไตล์สำหรับปุ่มลบรายการใน Cart */
+.cart-items-item .cross {
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+}
+
+/* สไตล์สำหรับส่วนล่างของ Cart */
+.cart-bottom {
+    margin-top: 80px;
+    /* ระยะห่างด้านบน 80px */
+    display: flex;
+    /* ใช้ Flexbox */
+    justify-content: space-between;
+    /* จัดระยะห่างระหว่างลูกในแนวนอน */
+    gap: max(12vw, 20px);
+    /* ระยะห่างระหว่างลูกที่ปรับตามขนาดหน้าจอ โดยมีค่าขั้นต่ำที่ 20px */
+}
+
+/* สไตล์สำหรับส่วนรวมยอดใน Cart */
+.cart-total {
+    flex: 1;
+    /* ขยายเต็มพื้นที่ที่เหลือ */
+    display: flex;
+    /* ใช้ Flexbox */
+    flex-direction: column;
+    /* จัดเรียงในแนวตั้ง */
+    gap: 20px;
+    /* ระยะห่างระหว่างลูก 20px */
+    align-items: flex-end;
+    /* จัดตำแหน่งปุ่มและเนื้อหาไปทางขวา */
+}
+
+/* สไตล์สำหรับรายละเอียดรวมยอดใน Cart */
+.cart-total-details {
+    font-family: Arial, Helvetica, sans-serif;
+    /* รูปแบบฟอนต์ */
+    display: flex;
+    /* ใช้ Flexbox */
+    justify-content: space-between;
+    /* จัดระยะห่างระหว่างลูกในแนวนอน */
+    color: #555;
+    /* สีฟอนต์เทาเข้ม */
+    width: 100%;
+    /* ให้รายละเอียดเต็มพื้นที่ */
+}
+
+/* สไตล์สำหรับเส้นแบ่งในส่วนรวมยอดของ Cart */
+.cart-total hr {
+    margin: 5px 0px;
+    /* ระยะห่างด้านบนและด้านล่าง 5px */
+}
+
+/* สไตล์สำหรับปุ่มในส่วนรวมยอดของ Cart */
+.cart-total button {
+    border: none;
+    /* ไม่มีเส้นขอบ */
+    color: white;
+    /* สีฟอนต์ขาว */
+    background-color: black;
+    /* พื้นหลังสีดำ */
+    width: max(15vw, 200px);
+    /* ความกว้างที่ปรับตามขนาดหน้าจอ โดยมีค่าขั้นต่ำที่ 200px */
+    padding: 12px 0px;
+    /* ระยะห่างภายใน 12px ด้านบนและล่าง */
+    border-radius: 4px;
+    /* มุมโค้งมน 4px */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+    align-self: flex-end;
+    /* จัดตำแหน่งปุ่มไปด้านขวา */
+}
+
+/* สไตล์สำหรับหน้าจอที่มีความกว้างสูงสุด 750px */
+@media (max-width: 750px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+        /* จัดเรียงในแนวตั้งแบบย้อนกลับ */
+    }
+
+    .cart-promocode {
+        justify-content: start;
+        /* จัดตำแหน่งไปทางซ้าย */
+    }
+
+    .cart-items-item p {
+        padding-left: 10px;
+        /* ระยะห่างด้านซ้าย 10px */
+    }
+}
+
+.add-cart-btn {
+    background-color: #28a745;/* สีเขียว */
+    color: white;
+    border-radius: 10px;
+    min-width: 30px; /* กำหนดความกว้างขั้นต่ำ */
+    max-width: 50px; /* กำหนดความกว้างสูงสุด */
+}
+
+.add-cart-btn:hover {
+    background-color: #218838;
+}
+
+.remove-cart-btn {
+    background-color: #dc3545; /* สีแดง */
+    color: white;
+    border-radius: 10px;
+    min-width: 30px; /* กำหนดความกว้างขั้นต่ำ */
+    max-width: 50px; /* กำหนดความกว้างสูงสุด */
+}
+
+.remove-cart-btn:hover {
+    background-color: #c82333;
+}

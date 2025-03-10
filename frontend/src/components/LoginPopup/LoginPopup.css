@@ -1,0 +1,102 @@
+/* สไตล์สำหรับคอมโพเนนต์ LoginPopup */
+.login-popup-cust {
+  position: fixed; /* กำหนดตำแหน่งแบบ fixed */
+  top: 0; /* ตำแหน่งด้านบนสุดของหน้าจอ */
+  left: 0; /* ตำแหน่งด้านซ้ายสุดของหน้าจอ */
+  width: 100%; /* ความกว้างเต็มหน้าจอ */
+  height: 100%; /* ความสูงเต็มหน้าจอ */
+  background: rgba(0, 0, 0, 0.5); /* พื้นหลังสีดำโปร่งแสง */
+  display: flex; /* ใช้ Flexbox */
+  justify-content: center; /* จัดกึ่งกลางแนวนอน */
+  align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+  z-index: 9999; /* ความลำดับชั้นสูงสุด */
+}
+
+/* สไตล์สำหรับคอนเทนเนอร์ของ LoginPopup */
+.login-popup-container-cust {
+  background-color: white; /* พื้นหลังสีขาว */
+  padding: 30px; /* ระยะห่างภายใน 20px */
+  width: 400px; /* ความกว้าง 300px */
+  border-radius: 10px; /* มุมโค้งมน 10px */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงา */
+  display: flex; /* ใช้ Flexbox */
+  flex-direction: column; /* จัดเรียงในแนวตั้ง */
+}
+
+/* สไตล์สำหรับหัวข้อของ LoginPopup */
+.login-popup-title-cust {
+  display: flex; /* ใช้ Flexbox */
+  justify-content: space-between; /* จัดระยะห่างระหว่างลูกในแนวนอน */
+  align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+  margin-bottom: 20px; /* ระยะห่างด้านล่าง 20px */
+}
+
+.login-popup-title-cust h2 {
+  margin: 0; /* ไม่มีระยะห่าง */
+  font-size: 24px; /* ขนาดฟอนต์ 24px */
+  font-weight: bold; /* ความหนาของฟอนต์ */
+}
+
+.login-popup-title-cust img {
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+  width: 20px; /* ความกว้าง 20px */
+  height: 20px; /* ความสูง 20px */
+}
+
+/* สไตล์สำหรับอินพุตใน LoginPopup */
+.login-popup-inputs-cust {
+  display: flex; /* ใช้ Flexbox */
+  flex-direction: column; /* จัดเรียงในแนวตั้ง */
+}
+
+.login-popup-inputs-cust p {
+  margin: 5px;
+}
+
+.login-popup-inputs-cust input {
+  margin-bottom: 10px; /* ระยะห่างด้านล่าง 10px */
+  padding: 10px; /* ระยะห่างภายใน 10px */
+  font-size: 16px; /* ขนาดฟอนต์ 16px */
+  border: 1px solid #ccc; /* เส้นขอบสีเทา */
+  border-radius: 5px; /* มุมโค้งมน 5px */
+}
+
+.login-popup-inputs-cust input:focus {
+  border-color: #007bff; /* สีขอบเมื่อโฟกัส */
+  outline: none; /* ไม่มีเส้นขอบ */
+}
+
+/* สไตล์สำหรับปุ่มใน LoginPopup */
+button {
+  padding: 10px; /* ระยะห่างภายใน 10px */
+  font-size: 16px; /* ขนาดฟอนต์ 16px */
+  background-color: #007bff; /* พื้นหลังสีน้ำเงิน */
+  color: white; /* สีฟอนต์ขาว */
+  border: none; /* ไม่มีเส้นขอบ */
+  border-radius: 5px; /* มุมโค้งมน 5px */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+  margin-top: 10px; /* ระยะห่างด้านบน 10px */
+}
+
+button:hover {
+  background-color: #0056b3; /* พื้นหลังสีน้ำเงินเข้มเมื่อชี้ */
+}
+
+/* สไตล์สำหรับเงื่อนไขใน LoginPopup */
+.login-popup-condition-cust {
+  text-align: center; /* จัดกึ่งกลางข้อความ */
+  margin-top: 10px; /* ระยะห่างด้านบน 10px */
+}
+
+.login-popup-condition-cust p {
+  font-size: 14px; /* ขนาดฟอนต์ 14px */
+}
+
+.login-popup-condition-cust span {
+  color: #007bff; /* สีฟอนต์สีน้ำเงิน */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+}
+
+.login-popup-condition-cust span:hover {
+  text-decoration: underline; /* ขีดเส้นใต้เมื่อชี้ */
+}

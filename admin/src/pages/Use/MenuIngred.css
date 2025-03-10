@@ -1,0 +1,114 @@
+/* General container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+/* Heading styles */
+h1 {
+    color: #333;
+}
+
+/* Form Styles */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Label and input styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.menuIngred-add-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menuIngred-add-button:hover {
+    background-color: #333;
+}
+
+/* Table styles for displaying ingredients */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Button styles for table actions */
+.menuIngred-del-button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #f44336;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menuIngred-del-button:hover {
+    background-color: #e41f21;
+}
+
+.menuIngred-edit-button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: blue;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menuIngred-edit-button:hover {
+    background-color: #1e90ff;
+}
+/* Message and error display */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}

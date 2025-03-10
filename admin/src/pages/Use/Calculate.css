@@ -1,0 +1,100 @@
+.calculate-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.calculate-container h3 {
+  text-align: center;
+  /*font-size: 2rem;*/
+  margin-bottom: 20px;
+  color: black;
+}
+
+.cal-menu-section {
+  margin-bottom: 30px;
+}
+
+.cal-menu-section h3 {
+  /*font-size: 1.5rem;*/
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cal-ingredient-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cal-ingredient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cal-ingredient-item:hover {
+  background-color: #f1f1f1;
+}
+
+.cal-ingredient-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.cal-ingredient-quantity {
+  font-size: 1rem;
+  color: #666;
+}
+
+.cal-ingredient-price {
+  font-size: 1.1rem;
+  color: #4caf50; /* Green color for price */
+  font-weight: bold;
+}
+
+.cal-error-text {
+  color: #d9534f;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cal-total-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cal-loading-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff9800; /* Orange color for loading text */
+}
+
+@media (max-width: 768px) {
+  .cal-ingredient-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cal-ingredient-quantity, .cal-ingredient-price {
+    margin-top: 5px;
+  }
+}

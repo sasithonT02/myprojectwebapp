@@ -1,0 +1,121 @@
+/* Container for the entire form */
+.edit-menu {
+    max-width: 900px; /* ลดขนาดของฟอร์มให้เหมาะสม */
+    width: 95%; /* รองรับหน้าจอที่เล็กลง */
+    margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 16px;
+}
+
+.edit-menu form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text for each section */
+.edit-menu p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.edit-menu input,
+.edit-menu textarea {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect */
+.edit-menu input:focus,
+.edit-menu textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Image upload section */
+.edit-img-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-img-upload label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 160px;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: #fafafa;
+}
+
+.edit-img-upload label:hover {
+    border-color: #4caf50;
+}
+
+.edit-img-upload img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+/* Layout for input fields (menu name, description, etc.) */
+.edit-date, .edit-price {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ปุ่มบันทึก */
+.edit-btn {
+    width: 100%;
+    padding: 12px; /* ลดขนาดของปุ่มลง */
+    background: #000; /* ใช้สีดำแทนสีเขียว */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px; /* ลดขนาดฟอนต์ */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.edit-btn:hover {
+    background: #444; /* ปรับสีเมื่อ hover เป็นสีเทาเข้ม */
+    transform: scale(1.05);
+}
+
+/* Mobile and smaller screens */
+@media (max-width: 600px) {
+    .edit-menu {
+        width: 90%;
+    }
+
+    .edit-product-name, .edit-product-description, .edit-date, .edit-price {
+        width: 100%;
+    }
+
+    .edit-img-upload label {
+        height: 140px; /* ลดขนาด label ของการอัปโหลดรูป */
+    }
+}

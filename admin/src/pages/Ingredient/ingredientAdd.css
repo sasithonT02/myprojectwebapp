@@ -1,0 +1,65 @@
+.addIngred {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto; /* ลด margin บน-ล่างให้ฟอร์มขึ้นไปข้างบน */
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -20px; /* ขยับฟอร์มขึ้นไปด้านบน */
+}
+
+.addingredients h2 {
+  /*font-size: 1.2rem;*/
+  font-weight: bold;
+  margin-bottom: 18px;
+  text-align: center;
+  color: black;
+}
+  
+  .addIngred form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* เพิ่มระยะห่างระหว่าง Input */
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .addIngred p {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px; /* ขยายตัวอักษร */
+  }
+  
+  .addIngred input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px; /* ขยายตัวอักษร */
+  }
+  
+  .addIngred input:focus {
+    border-color: blue;
+    outline: none;
+  }
+  
+  .add-ingred-btn {
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px; /* ปรับขนาดปุ่ม */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .add-ingred-btn:hover {
+    background: #444;
+    transform: scale(1.05);
+  }
+  
